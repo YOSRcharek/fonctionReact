@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Exercice 1 : Compteur
 const Counter = ({ initialCount = 0, step = 1 }) => {
   const [count, setCount] = useState(initialCount);
 
@@ -13,7 +12,7 @@ const Counter = ({ initialCount = 0, step = 1 }) => {
   );
 };
 
-// Exercice 2 : Gestion de liste dynamique
+
 const ListManager = ({ initialItems = [], placeholder = 'Ajouter un élément' }) => {
   const [items, setItems] = useState(initialItems);
   const [newItem, setNewItem] = useState('');
@@ -34,7 +33,7 @@ const ListManager = ({ initialItems = [], placeholder = 'Ajouter un élément' }
   );
 };
 
-// Exercice 3 : Changement de couleur dynamique
+
 const ColorBox = ({ initialColor = '#000', colorOptions = ['#ff0000', '#00ff00', '#0000ff'] }) => {
   const [color, setColor] = useState(initialColor);
 
@@ -51,7 +50,7 @@ const ColorBox = ({ initialColor = '#000', colorOptions = ['#ff0000', '#00ff00',
   );
 };
 
-// Exercice 4 : Gestionnaire de notes
+
 const NotesManager = ({ initialNotes = [] }) => {
   const [notes, setNotes] = useState(initialNotes);
   const [newNote, setNewNote] = useState('');
@@ -80,7 +79,7 @@ const NotesManager = ({ initialNotes = [] }) => {
   );
 };
 
-// Exercice 5 : Todo List avec priorités
+
 const TodoList = ({ initialTasks = [] }) => {
   const [tasks, setTasks] = useState(initialTasks);
   const [taskName, setTaskName] = useState('');
