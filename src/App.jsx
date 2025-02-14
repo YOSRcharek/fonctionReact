@@ -6,6 +6,7 @@ import { findLongestWord, countOccurrences, calculateTotal, addEntry, Tab, searc
 import "./App.css";
 import Header from "./header";
 import Footer from "./footer";
+import { Counter, ListManager, ColorBox, NotesManager, TodoList } from "./props";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +32,13 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <h2>Exercices React</h2>
+        <Counter initialCount={5} step={2} />
+        <ListManager initialItems={['React', 'Vue', 'Angular']} placeholder="Ajouter une technologie" />
+        <ColorBox initialColor="#f0f0f0" colorOptions={['#ff0000', '#00ff00', '#0000ff']} />
+        <NotesManager initialNotes={[10, 15, 18]} />
+        <TodoList initialTasks={[{ name: "Acheter du lait", priority: "Haute", completed: false }]} />
+     
       </main>
      <Footer/>
      </div>
